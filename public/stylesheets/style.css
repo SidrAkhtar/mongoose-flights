@@ -1,8 +1,55 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  /* display: grid;
+  grid-template-columns: auto; */
+  font-size: 20px;
+  font-weight: 200;
+  font-family: 'Montserrat Alternates', sans-serif;
+  background-color: #B0C4DE;
+}
+a {
+  color: rgb(2, 135, 244);
 }
 
-a {
-  color: #00B7FF;
+/* button {
+  color: steelblue;
+} */
+#new-form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(auto, 22rem));
+}
+
+#new-form input[type="submit"] {
+  grid-column: span 2;
+  width: 10rem;
+  margin-left: auto;
+}
+
+/* #new-form *,
+#add-review-form *,
+#add-performer-form * {
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+} */
+
+#show-page {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+}
+
+#show-page div:nth-child(even) {
+  font-weight: bold;
+}
+
+#show-destination {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1rem;
+}
+
+#show-destination div:nth-child(even) {
+  font-weight: bold;
 }

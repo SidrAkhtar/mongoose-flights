@@ -7,8 +7,10 @@ const flightsCtrl = require('../controllers/flights');
 // GET /movies/new (new functionality)
 router.get('/', flightsCtrl.index);
 router.get('/new', flightsCtrl.new);
+// GET /flights (show functionality)
+router.get('/:id', flightsCtrl.show)
 // Post /flights (create functionality)
 router.post('/', flightsCtrl.create)
-router.get('/:id', flightsCtrl.show)
+
 
 module.exports = router;
